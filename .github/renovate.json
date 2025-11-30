@@ -31,7 +31,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["build.gradle"],
+      "managerFilePatterns": [
+        "/build.gradle/"
+      ],
       "matchStrings": [
         "\\/\\/ renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\s*def\\s?\\S+\\s?=\\s?\"(?<currentValue>.*?)\".*"
       ],
