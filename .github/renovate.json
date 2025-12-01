@@ -26,6 +26,16 @@
         "ci"
       ],
       "automerge": true
+    },
+    {
+      "matchManagers": [
+        "gradle-wrapper"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": false
     }
   ],
   "customManagers": [
