@@ -18,7 +18,7 @@ jobs:
       - name: Setup Java JDK
         uses: actions/setup-java@v5.0.0
         with:
-          java-version: 21
+          java-version: 8
           distribution: zulu
 
       - uses: actions/checkout@v6
@@ -27,3 +27,6 @@ jobs:
 
       - name: Gradle Build
         run: ./gradlew build
+
+      - name: Gradle Build
+        run: ./gradlew publishToMavenLocal
